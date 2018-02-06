@@ -18,6 +18,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
 from rango import views
+<<<<<<< HEAD
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -28,3 +29,11 @@ urlpatterns = [
     url(r'^rango/',include('rango.urls')),
     url(r'^admin/',admin.site.urls),
     ] + static(settings.MEDIA_URL, document_robot=settings.MEDIA_ROOT)
+=======
+
+urlpatterns = [
+    url(r'^$',views.index,name='index'),
+    url(r'^rango/',include('rango.urls')),
+    url(r'^admin/',admin.site.urls),
+    ]
+>>>>>>> 2a624b6a079f0b36308200f492c8ead6f59515ea

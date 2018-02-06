@@ -18,6 +18,7 @@ print(os.path.dirname(os.path.dirname(__file__)))
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+<<<<<<< HEAD
 STATIC_DIR = os.path.join(BASE_DIR,'static')
 TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
@@ -26,6 +27,10 @@ MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 
+=======
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
+>>>>>>> 2a624b6a079f0b36308200f492c8ead6f59515ea
 
 
 # Quick-start development settings - unsuitable for production
@@ -68,7 +73,10 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [TEMPLATES_DIR],
+<<<<<<< HEAD
         
+=======
+>>>>>>> 2a624b6a079f0b36308200f492c8ead6f59515ea
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,7 +84,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+<<<<<<< HEAD
                 'django.template.context_processors.media',
+=======
+>>>>>>> 2a624b6a079f0b36308200f492c8ead6f59515ea
             ],
         },
     },
@@ -131,6 +142,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+<<<<<<< HEAD
 STATIC_URL = '/static/'
 STATICFILES_DIR = [STATIC_DIR, ]
+=======
+
+STATICFILES_DIR = [STATIC_DIR, ]
+STATIC_URL = '/static/'
+>>>>>>> 2a624b6a079f0b36308200f492c8ead6f59515ea
 
